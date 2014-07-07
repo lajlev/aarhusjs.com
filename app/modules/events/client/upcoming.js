@@ -1,7 +1,7 @@
 
 Template.events_upcoming.helpers({
   has_events: function() {
-    return (this.length > 0);
+    return (this.count() > 0);
   },
 
   event_date: function() {
