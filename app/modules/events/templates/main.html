@@ -1,11 +1,17 @@
 <template name="events_main">
 <div class="row">
+{{#if next}}
 {{> events_next next}}
+{{/if}}
 </div>
 <div class="row">
+{{#if upcoming.count}}
 {{> events_upcoming upcoming}}
+{{/if}}
 </div>
 <div class="row">
+{{#if past.count}}
 {{> events_past past}}
+{{/if}}
 </div>
 </template>

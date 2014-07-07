@@ -1,8 +1,5 @@
 
 Template.events_upcoming.helpers({
-  has_events: function() {
-    return (this.count() > 0);
-  },
 
   event_date: function() {
     return moment(this.startDate).endOf('day').fromNow();
