@@ -1,8 +1,23 @@
 <template name="events_upcoming">
-<ul>
+<div class="upcoming_meetups">
+  <h1>{{#if has_events}}Upcomming{{/if}}</h1>
 {{#each this}}
-<li>{{title}} - {{tagline}}</li>
+<div class="upcoming_meetup">
+  <h1>{{title}} - <em>{{tagline}}</em></h1>
+  <div class="event_date">{{event_date}}</div>
+  <div class="event_location">{{event_location}}</div>
+  <div class="event_sessions">
+    {{#each sessions}}
+      <h1 class="session_name">{{title}} <small class="session_start_time">{{startTime}}</small></h1>
+      {{#each speakers}}
+        <h3 class="speaker_name">{{name}}</h3>
+      {{/each}}
+    {{/each}}
+
+  </div>
+  <p>See more on <a href="{{url}}" target="_blank">Lanyrd page for {{title}}</a></p>
+</div>
 {{/each}}
-</ul>
+</div>
 
 </template>
