@@ -5,7 +5,8 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="/"><img src="/images/aarhusjs.svg" class="logo"></a>
       <ul class="nav navbar-nav">
-        <li class="{{ isActiveRoute 'events_main' }}"><a href="{{pathFor 'events_main'}}">Events</a></li>
+        <li class="{{ isActiveRoute 'events_upcoming' }}"><a href="{{pathFor 'events_upcoming'}}">Upcoming Events</a></li>
+        <li class="{{ isActiveRoute 'events_past' }}"><a href="{{pathFor 'events_past'}}">Past Events</a></li>
       </ul>
     </div>
 </nav>
