@@ -1,4 +1,4 @@
-# Official AArhusJs website
+# Official AarhusJs website
 
  - Lists aarhusjs activities
  - "Integrates" with lanyrd through screenscraping
