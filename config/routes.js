@@ -1,7 +1,7 @@
 Router.configure({
   layoutTemplate: 'layout',
-notFoundTemplate: 'notFound',
-loadingTemplate: 'loading'
+  notFoundTemplate: 'notFound',
+  loadingTemplate: 'loading'
 });
 
 Router.map(function() {

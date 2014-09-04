@@ -1,6 +1,6 @@
 
 var update_events = function update_events() {
-  scraper = Meteor.require('lanyrd-scraper');
+  scraper = Meteor.npmRequire('lanyrd-scraper');
   scraper.scrape('series/aarhusjs', Meteor.bindEnvironment(function(err, series) {
     if(!err) {
       var events = series.events;
