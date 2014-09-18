@@ -4,12 +4,9 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-reywood:bootstrap3-sass
-reywood:font-awesome-sass
 meteorhacks:npm
 mrt:moment@2.6.0
 
 npm-container
 fourseven:scss
 iron:router@0.9.1
-
